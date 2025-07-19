@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>✨ PLANO ✨</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header: logo + title -->
+  <header>
+    <img src="images/PlanoIcon.png" alt="Plano Logo" />
+    <h1>PLANO</h1>
+  </header>
+
+  <main class="layout">
+
+    <!-- Left side widgets -->
+    <div class="left-side">
+
+      <!-- Clock -->
+      <div class="widget clock">
+        <h2>Current Time</h2>
+        <script src="https://cdn.logwork.com/widget/clock.js"></script>
+        <a
+          href="https://logwork.com/current-time-in-jeddah-saudi-arabia-makkah-al-mukarramah"
+          class="clock-time"
+          data-style="primaryv3"
+          data-size="270"
+          data-timezone="Asia/Riyadh"
+        >Current time in Jeddah, Saudi Arabia</a>
+      </div>
+
+      <!-- Pomodoro -->
+      <div class="widget pomodoro">
+        <h2>Pomodoro Timer</h2>
+        <div id="timer">25:00</div>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+
+    </div>
+
+    <!-- Right side widgets -->
+    <div class="right-side">
+
+      <!-- Task manager -->
+      <div class="widget tasks">
+        <h2>My Tasks</h2>
+        <input type="text" id="taskInput" placeholder="Add a task" />
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+      </div>
+
+        <!-- Progress -->
+<div class="widget progress full-width">
+  <h2> Progress </h2>
+  <div class="progress-track">
+    <div class="progress-icon">
+      <img src="images/sonic.gif" alt="Progress" style="width:40px; height:40px;" />
+    </div>
+    <div class="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+    <div class="goal-icon"></div>
+    <img src="images/flag.gif" alt="Progress" style="width:40px; height:40px;" />
+  </div>
+  <div id="progressText">0% Completed</div>
+</div>
+
+<div class="widget quote full-width">
+  <h2>✨ KEEP GOING ✨</h2>
+  
+  <img src="images/star.gif" alt="motivation" style="width:270px; height:270px;" />
+  
+</div>
+
+
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #a0d8f1, #5a92d6);
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+header img {
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+/* Widgets */
+.widget {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  flex: 1;
+  min-height: 100px;
+}
+
+.widget:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.widget h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+input#taskInput {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  padding: 8px 14px;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #315f86;
+}
+
+ul#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+ul#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f9ff;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+ul#taskList li span {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+ul#taskList li span.completed {
+  text-decoration: line-through;
+  color: gray;
+  background-color: transparent;
+}
+
+ul#taskList li button {
+  background: none;
+  color: red;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Progress bar style */
+.progress-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.progress-icon,
+.goal-icon {
+  font-size: 24px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+#progress-fill {
+  height: 100%;
+  background: linear-gradient(to right, #4caf50, #81c784);
+  width: 0%;
+  border-radius: 8px;
+  transition: width 0.3s ease-in-out;
+}
+
+#progressText {
+  text-align: center;
+  font-size: 16px;
+}
+
+#quote {
+  text-align: center;
+  font-style: italic;
+  color: #444;
+}
+.widget.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.widget.pomodoro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.widget.tasks input#taskInput,
+.widget.tasks button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.widget.tasks input#taskInput {
+  width: 70%;
+  margin-right: 5px;
+}
+
+.widget.tasks button {
+  width: 25%;
+  margin: 0;
+}
+.widget.tasks {
+  text-align: center;
+}
+
+.widget.tasks input#taskInput {
+  width: 65%;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.widget.tasks button {
+  width: 25%;
+  display: inline-block;
+}
+
+.widget.tasks ul {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.widget.pomodoro {
+  text-align: center;
+}
+
+.widget.pomodoro #timer {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.widget.pomodoro button {
+  margin: 5px;
+}
+.motivation-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+.widget.quote img {
+  display: block;
+  margin: 0 auto;
+}
