@@ -21,7 +21,8 @@ It helps users organize their day using widgets like a clock, pomodoro timer, ta
 - **CSS3** – Custom styles, responsive grid layout
 - **JavaScript** – Task handling, timer logic, motivational integration
 - **External Services**:
-  - Clock from [Logwork](https://logwork.com)
+  - Clock from (https://logwork.com)
+  - deploy by netfly
 
 
 ---
@@ -36,7 +37,13 @@ It helps users organize their day using widgets like a clock, pomodoro timer, ta
 
 ## 📸 Screenshots
 
-*
+![Image](https://github.com/user-attachments/assets/1d0a54d4-ad7e-4fc6-b4f0-dd3fee5eb993)
+
+
+
+
+
+
 
 ---
 ## 🚀 VIEW THE WEBSITE BY CLICK HERE 
